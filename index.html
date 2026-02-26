@@ -4,38 +4,53 @@
     <title>My Portfolio</title>
     <style>
         body {
+            margin:0;
             text-align: center;
             background-color: #f0f2f3;
             font-family: Arial, sans-serif;
         }
+        
         nav {
-    background-color: #2399d4;
-    padding: 10px;
+            background-color: #2399d4;
+            padding: 10px;
 }
 
 nav a {
-    color: rgb(14, 18, 19);
+    color: white;
     margin: 10px;
     text-decoration: none;
+    font-weight: bold;
+}
+nav a : hover{
+    color:black;
+
 }
 
         img {
-            border-radius: 60%;
+            border-radius: 50%;
         }
 
         ul {
             text-align: left;
             display: inline-block;
+            life-style-position: inside;
         }
-        div{
-            background-color: rgb(26, 165, 219) ;
-            margin: 15px;
+        project{
+            background-color: white ;
+            margin: 20px auto;
             padding: 15px;
             width: 60%;
             border-radius: 8px;
+            box-shadow:0 4px 6px rgba(0,0,0,0,1)
         }
         h1{
             margin-top: 20px;
+        }
+        h2{
+            margin-top: 30px;
+        }
+        p{
+            font-size: 16px;
         }
         ul{
             list-style-position: inside;
@@ -53,11 +68,20 @@ nav a {
         p{
             font-size: 16px;
         }
+        .resume-btn{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            baground-color:#2399d4;
+            color:white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
         footer{
             margin-top: 40px;
             padding: 10px;
             background-color:#1ca2bd;
-            color:rgb(233, 239, 240);
+            color:white;
         }
     </style>
 </head>
@@ -87,7 +111,7 @@ nav a {
         <li>GitHub</li>
     </ul>
     <h2>Projects</h2>
-    <div>
+    
         <div class="project">
         <h3>Personal Portfolio Website</h3>
         <p>This is my first web development project built using HTML and CSS.It shows my profile,skills and contact information.</p>
@@ -100,7 +124,7 @@ nav a {
     <footer>
         <P>© 2026 Thrupthi B S. All Rights Reserved.</P>
     </footer>
-    </div>
+    
 
 </body>
 </html>
