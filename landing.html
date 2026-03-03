@@ -1,63 +1,133 @@
-
-
-<!Doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Simple landing page</title>
-        <style>
-            nav{
-                background-color:black;
-                padding:10px;
-            }
-            nav a{
-                color:white;
-                text-decoration:none;
-                margin:10px;
-            }
-            .hero{
-                background-color:lightblue;
-                padding:60px
-            }
+<head>
+    <title>My Landing Page</title>
 
-            .services{
-                background-color:#f2f2f2b0;
-                padding:40px;
-            }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-            .box{
-                background-color:white;
-                margin:15px auto;
-                padding:20px;
-                width:60%;
-            }
+        /* Navigation */
+        nav {
+            background-color: black;
+            padding: 15px;
+        }
 
-        </style>
-    </head>
-    <body>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-        <section class="hero">
-            <h1> Build Your Digital Future With Us</h1>
-            <p>We design and develop modern,responsive websites.</p>
-        </section>
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
 
-        <section class=""services">
-            <h2>Our Servicess</h2>
+        nav a:hover {
+            color: lightblue;
+        }
 
-            <div class=""box">
-                <h3>Website Design</h3>
-                <p>We create clean and modern website design.</p>
-            </div>
+        /* Hero Section */
+        .hero {
+            background-color: lightblue;
+            padding: 80px 20px;
+        }
 
-            <div class= "box"></div>
-            <h3> Web Development</h3>
-        <p>We build responsive and user-friendly websites.</p>
-            </div>
-        
-        </section>
-    </body>
+        .hero h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #f2f2f2;
+            padding: 50px 20px;
+        }
+
+        .box {
+            background-color: white;
+            margin: 15px auto;
+            padding: 20px;
+            width: 60%;
+            border-radius: 8px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+            padding: 50px 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f2f2f2;
+            padding: 50px 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Build Your Digital Future With Us</h1>
+        <p>We design and develop modern, responsive and user-friendly websites.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="box">
+            <h3>Website Design</h3>
+            <p>We create clean and attractive website designs.</p>
+        </div>
+
+        <div class="box">
+            <h3>Web Development</h3>
+            <p>We build responsive websites for all devices.</p>
+        </div>
+
+        <div class="box">
+            <h3>Website Maintenance</h3>
+            <p>We provide updates and support to keep your website secure.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We are passionate web developers focused on creating simple and effective websites.</p>
+        <p>Our mission is to help businesses grow online with modern design solutions.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: thrupthibs@gmail.com</p>
+        <p>Phone: +91 8147872567</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Landing Page. All Rights Reserved.</p>
+        <p>Designed using HTML & CSS</p>
+    </footer>
+
+</body>
 </html>
