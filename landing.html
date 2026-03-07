@@ -1,133 +1,422 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Landing Page</title>
+<title>Thrupthi B S | Portfolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
+<style>
 
-        /* Navigation */
-        nav {
-            background-color: black;
-            padding: 15px;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-weight: bold;
-        }
+body{
+background:#f4f6fb;
+color:#333;
+}
 
-        nav a:hover {
-            color: lightblue;
-        }
+/* NAVBAR */
 
-        /* Hero Section */
-        .hero {
-            background-color: lightblue;
-            padding: 80px 20px;
-        }
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#0f172a;
+color:white;
+}
 
-        .hero h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+nav h2{
+color:#38bdf8;
+}
 
-        /* Services Section */
-        .services {
-            background-color: #f2f2f2;
-            padding: 50px 20px;
-        }
+nav ul{
+display:flex;
+list-style:none;
+}
 
-        .box {
-            background-color: white;
-            margin: 15px auto;
-            padding: 20px;
-            width: 60%;
-            border-radius: 8px;
-        }
+nav ul li{
+margin-left:20px;
+}
 
-        /* About Section */
-        .about {
-            background-color: white;
-            padding: 50px 20px;
-        }
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
 
-        /* Contact Section */
-        .contact {
-            background-color: #f2f2f2;
-            padding: 50px 20px;
-        }
+nav ul li a:hover{
+color:#38bdf8;
+}
 
-        /* Footer */
-        footer {
-            background-color: black;
-            color: white;
-            padding: 20px;
-        }
-    </style>
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+padding:80px 10%;
+background:linear-gradient(120deg,#0f172a,#1e3a8a);
+color:white;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin:15px 0;
+font-size:18px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#38bdf8;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#0284c7;
+}
+
+/* PROFILE IMAGE */
+
+.hero img{
+width:250px;
+height:250px;
+border-radius:70%;
+border:4px solid #e1eaee;
+object-fit:cover;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+section h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+/* ABOUT */
+
+.about p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+color:#555;
+}
+
+/* SKILLS */
+
+.skills-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:30px;
+}
+
+.skill{
+background:white;
+padding:20px 30px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+font-weight:bold;
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+}
+
+/* PROJECTS */
+
+.projects-container{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+}
+
+.project-card{
+width:300px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.project-card h3{
+margin:15px 0;
+}
+
+.project-card p{
+padding:0 15px 20px;
+color:#555;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 10%;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+text-align:center;
+}
+
+.contact h2{
+font-size:34px;
+margin-bottom:40px;
+}
+
+.contact-container{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+justify-content:center;
+}
+
+.glass-card{
+flex:1;
+min-width:280px;
+padding:30px;
+border-radius:15px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.glass-card:hover{
+transform:translateY(-10px);
+}
+
+.contact-info h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.contact-info p{
+margin:10px 0;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:none;
+border-radius:6px;
+}
+
+.contact-form button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#38bdf8;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.contact-form button:hover{
+background:#0284c7;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+<!-- NAVBAR -->
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Build Your Digital Future With Us</h1>
-        <p>We design and develop modern, responsive and user-friendly websites.</p>
-    </section>
+<nav>
 
-    <!-- Services Section -->
-    <section class="services">
-        <h2>Our Services</h2>
+<h2> Codesoft</h2>
 
-        <div class="box">
-            <h3>Website Design</h3>
-            <p>We create clean and attractive website designs.</p>
-        </div>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
 
-        <div class="box">
-            <h3>Web Development</h3>
-            <p>We build responsive websites for all devices.</p>
-        </div>
+</nav>
 
-        <div class="box">
-            <h3>Website Maintenance</h3>
-            <p>We provide updates and support to keep your website secure.</p>
-        </div>
-    </section>
+<!-- HERO -->
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Us</h2>
-        <p>We are passionate web developers focused on creating simple and effective websites.</p>
-        <p>Our mission is to help businesses grow online with modern design solutions.</p>
-    </section>
+<div class="hero">
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Email: thrupthibs@gmail.com</p>
-        <p>Phone: +91 8147872567</p>
-    </section>
+<div class="hero-text">
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 My Landing Page. All Rights Reserved.</p>
-        <p>Designed using HTML & CSS</p>
-    </footer>
+<h1>Hello, I'm <span>Thrupthi</span></h1>
+
+<p>Aspiring Web Developer passionate about building modern websites.</p>
+
+<button>View My Work</button>
+
+</div>
+
+<img src="photo.jpg" alt="Thrupthi Photo">
+
+</div>
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a passionate web development learner focusing on creating modern
+websites using HTML, CSS, and JavaScript. I enjoy designing clean and
+user-friendly interfaces and continuously improving my skills.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section>
+
+<h2>My Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">GitHub</div>
+<div class="skill">Responsive Design</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section>
+
+<h2>Projects</h2>
+
+<div class="projects-container">
+
+<div class="project-card">
+<img src="https://picsum.photos/300/200">
+<h3>Portfolio Website</h3>
+<p>A responsive personal portfolio created using HTML and CSS.</p>
+</div>
+
+<div class="project-card">
+<img src="https://picsum.photos/301/200">
+<h3>Landing Page</h3>
+<p>A modern landing page with clean UI and responsive layout.</p>
+</div>
+
+<div class="project-card">
+<img src="https://picsum.photos/302/200">
+<h3>Business Website</h3>
+<p>A sample business website showcasing services and contact info.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>Contact Me</h2>
+
+<div class="contact-container">
+
+<div class="glass-card contact-info">
+
+<h3>Let's Work Together</h3>
+
+<p>Email: thrupthibs9@gmail.com</p>
+
+<p>Phone: +91 8147872567</p>
+
+<p>Location: Karnataka, India</p>
+
+<p>I am open to internships, projects, and collaborations.</p>
+
+</div>
+
+<div class="glass-card contact-form">
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Thrupthi B S | Web Developer</p>
+
+</footer>
 
 </body>
 </html>
